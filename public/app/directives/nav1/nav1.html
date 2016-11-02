@@ -1,0 +1,24 @@
+<div class="nav1">
+  <!-- <h1>This is nav1</h1> -->
+  <br>
+  <ul>
+    <li ui-sref="home">home</li>
+    <li ui-sref="register">register</li>
+    <li ui-sref="sxs">sxs</li>
+    <li ui-sref="account">account</li>
+    <li ui-sref="planTrip">plan-trip</li>
+  </ul>
+  <br>
+      <!-- {{items}} -->
+      <input type="number" ng-model="filter">
+      <div class="touring" ng-mouseover="filter=1">
+        touring
+      </div>
+      <div class="" ng-mouseover="filter=2">
+        adventure
+      </div>
+  <div class="test-call" ng-repeat="item in items | filter: {motor_type_id:filter}">
+      <h1>{{item.item_name}}</h1>
+      <h2>{{item.price}}</h2>
+  </div>
+</div>
