@@ -1,78 +1,114 @@
 .landing {
-  position: relative; }
-  .landing .mainImage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #C7C7C7; }
+  .landing .carouselWrapper {
     position: absolute;
     top: 0;
-    z-index: -1;
-    background: #C7C7C7;
-    height: 770px;
-    width: 100%;
+    z-index: 1;
     display: flex;
     justify-content: center; }
-    .landing .mainImage .mySlides {
-      width: 1600px;
-      height: 770px; }
-  .landing .popUp {
-    margin-top: 534px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .landing .popUp .tabPuller {
-      height: 29px;
-      width: 100px;
-      background-position: -5px 30px;
-      background-image: url("http://powersports.honda.com/images/home/hero_slider_btn.png"); }
-    .landing .popUp .popTop {
-      height: 5px;
-      width: 1600px;
-      max-width: 1600px;
-      background: #CCCCCC;
+    .landing .carouselWrapper .nav {
+      position: absolute;
+      top: 0; }
+    .landing .carouselWrapper .mainImage {
+      background: #C7C7C7;
+      height: 770px;
+      width: 100%;
       display: flex;
-      flex-direction: row; }
-      .landing .popUp .popTop .carouselTopper {
-        height: 5px;
-        width: 200px;
-        background: #CCCCCC; }
-      .landing .popUp .popTop .backRed {
-        height: 5px;
-        width: 200px;
-        background: #c00; }
-    .landing .popUp .popBot {
-      width: 1600px;
-      height: 110px;
+      justify-content: center; }
+      .landing .carouselWrapper .mainImage .mySlides {
+        width: 1600px;
+        height: 770px; }
+    .landing .carouselWrapper .popUp {
+      position: absolute;
+      bottom: 0;
+      z-index: 100;
+      transition: max-height 500ms ease-out;
       display: flex;
-      flex-direction: row; }
-      .landing .popUp .popBot .carouselContainer {
+      flex-direction: column;
+      align-items: center; }
+      .landing .carouselWrapper .popUp .tabPuller {
+        height: 29px;
+        width: 100px;
+        background-position: -5px 30px;
+        background-image: url("http://powersports.honda.com/images/home/hero_slider_btn.png"); }
+      .landing .carouselWrapper .popUp .popTop {
+        height: 5px;
+        width: 1600px;
+        max-width: 1600px;
+        background: #CCCCCC;
+        display: flex;
+        flex-direction: row; }
+        .landing .carouselWrapper .popUp .popTop .carouselTopper {
+          height: 5px;
+          width: 200px;
+          background: #CCCCCC; }
+        .landing .carouselWrapper .popUp .popTop .backRed {
+          height: 5px;
+          width: 200px;
+          background: #c00; }
+      .landing .carouselWrapper .popUp .popBot {
+        width: 1600px;
         height: 110px;
-        width: 200px;
-        cursor: pointer; }
-        .landing .popUp .popBot .carouselContainer .imageCover {
-          background: rgba(0, 0, 0, 0.5);
-          color: white; }
-    .landing .popUp .backRed {
-      background: #c00; }
-    .landing .popUp #image1 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CRF250L.jpg"); }
-    .landing .popUp #image2 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CBR1000RR_v3.jpg"); }
-    .landing .popUp #image3 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016_GTG_THUMB.jpg"); }
-    .landing .popUp #image4 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016MotoGP_THUMB.jpg"); }
-    .landing .popUp #image5 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/Rever_Thumb.jpg"); }
-    .landing .popUp #image6 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/mototv_Thumb.jpg"); }
-    .landing .popUp #image7 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2017_CRF_thumb.jpg"); }
-    .landing .popUp #image8 {
-      background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_ACC_Thumb.jpg"); }
+        transition: all 500ms ease-out;
+        display: flex;
+        flex-direction: row; }
+        .landing .carouselWrapper .popUp .popBot .carouselContainer {
+          height: 110px;
+          width: 200px;
+          cursor: pointer;
+          display: flex;
+          align-items: flex-end; }
+          .landing .carouselWrapper .popUp .popBot .carouselContainer .imageCover {
+            font-family: Arial,Helvetica,sans-serif;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: transparent;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 13px;
+            height: 0px;
+            width: 100%;
+            transition: all 500ms ease-out; }
+        .landing .carouselWrapper .popUp .popBot .carouselContainer:hover .imageCover {
+          transition: all 500ms ease-out;
+          font-family: Arial,Helvetica,sans-serif;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          text-align: left;
+          text-transform: uppercase;
+          font-size: 13px;
+          height: 110px;
+          width: 100%;
+          padding: 10px 15px; }
+      .landing .carouselWrapper .popUp .backRed {
+        background: #c00; }
+      .landing .carouselWrapper .popUp #image1 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CRF250L.jpg"); }
+      .landing .carouselWrapper .popUp #image2 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CBR1000RR_v3.jpg"); }
+      .landing .carouselWrapper .popUp #image3 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016_GTG_THUMB.jpg"); }
+      .landing .carouselWrapper .popUp #image4 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016MotoGP_THUMB.jpg"); }
+      .landing .carouselWrapper .popUp #image5 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/Rever_Thumb.jpg"); }
+      .landing .carouselWrapper .popUp #image6 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/mototv_Thumb.jpg"); }
+      .landing .carouselWrapper .popUp #image7 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2017_CRF_thumb.jpg"); }
+      .landing .carouselWrapper .popUp #image8 {
+        background-image: url("http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_ACC_Thumb.jpg"); }
   .landing .bottomLinksContainer {
     height: 215px;
     background: #C7C7C7;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: absolute;
+    bottom: 0; }
     .landing .bottomLinksContainer .bottomContent {
       display: flex;
       flex-direction: row;
@@ -408,205 +444,291 @@
   .registerHolder #right-panel i {
     font-size: 12px; }
 
-
-.nav1 {
-  background: transparent; }
-  .nav1 header {
-    max-width: 1024px;
-    min-width: 950px;
-    border: solid 1px #e6e5e6;
-    padding: 0 25px 20px;
-    font-family: Interstate;
-    margin: 0 auto;
-    z-index: 1;
-    color: #46494d;
-    background: white;
-    display: flex;
-    flex-direction: row; }
-  .nav1 #crosshair {
-    cursor: pointer; }
-  .nav1 #crosshair:hover {
-    color: #c00; }
-  .nav1 #branding {
-    width: 70px;
-    height: 70px;
-    background-image: url("http://powersports.honda.com/images/logoHonda.gif");
-    cursor: pointer;
-    margin-right: 22px; }
-  .nav1 .nav-wrapper {
-    width: 880px; }
-  .nav1 .nav-top {
-    margin-top: 7px;
-    margin-bottom: 12px;
-    font-size: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row; }
-  .nav1 #email {
-    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
-    background-position: 0 -309px;
-    width: 14px;
-    height: 9px;
-    display: inline-block;
-    padding-right: 17px; }
-  .nav1 #support {
-    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
-    background-position: 0 -1417px;
-    width: 12px;
-    height: 10px;
-    display: inline-block;
-    padding-right: 14px; }
-  .nav1 #login {
-    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
-    background-position: 0 -1170px;
-    width: 9px;
-    height: 9px;
-    display: inline-block;
-    padding-right: 12px; }
-  .nav1 .top-links {
-    padding-left: 14px; }
-  .nav1 .text-box {
-    margin-left: 20px;
-    width: 113px;
-    height: 13px;
-    padding: 4px 5px 3px 20px;
-    transition: width 250ms linear; }
-  .nav1 .text-box:hover {
-    width: 200px; }
-  .nav1 .search-box {
-    position: relative; }
-  .nav1 .btnSearch {
-    width: 13px;
-    height: 13px;
-    text-indent: -9999px;
-    background: transparent url(http://powersports.honda.com/images/header/honda-iconset.png) !important;
-    background-position: 0 -502px !important;
-    position: absolute;
-    left: 25px;
-    top: 6px;
-    border: none !important; }
-  .nav1 .nav-middle {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 13px; }
-  .nav1 .middle-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: bold; }
-  .nav1 .middle-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    font-weight: bold; }
-  .nav1 .main-link {
-    font-size: 15px;
-    font-weight: 700;
-    padding: 11px 13px; }
-  .nav1 .tools-link {
-    font-size: 11px;
-    font-weight: 700;
-    padding: 11px 9px; }
-  .nav1 .tools-div {
-    color: white;
-    background: #c00;
-    border: #C00 solid 1px;
-    height: 15px;
-    padding: 0 7px 1px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; }
-  .nav1 .tools-div:hover {
-    background: white;
-    color: #c00; }
-  .nav1 .Div-drop-down {
-    margin: 0 auto;
-    width: 948px;
-    min-height: 305px;
-    border: solid 1px #e6e5e6;
-    z-index: 1;
-    display: flex;
-    flex-direction: row; }
-  .nav1 .type-titles {
-    background: #eeeeee;
-    min-height: 305px;
-    width: 156px;
-    z-index: 10; }
-  .nav1 .title-holder {
-    padding: 19px 45px 19px 27px;
-    border-bottom: solid 1px #FFF;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black; }
-  .nav1 .title-holder:hover {
-    color: #C00;
-    background: white; }
-  .nav1 .itemsContainer {
-    background: #ffffff;
-    min-height: 305px;
-    width: 792px;
-    border-left: solid 1px #e6e5e6;
-    z-index: 10; }
-  .nav1 .items-holder {
-    padding: 15px 12px 0;
-    margin: 0px 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .nav1 .show-items {
-    text-align: center;
-    margin: 10px 12px 5px;
-    width: 148px;
-    height: 147px;
-    background: transparent;
+@charset "UTF-8";
+.sxs .acc {
+  height: 1130px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sxs .acc .accContainer {
+    width: 1195px;
+    height: 855px;
     display: flex;
     flex-direction: column; }
-    .nav1 .show-items .item-btn {
-      border: white;
-      background: white; }
-  .nav1 .show-items:hover {
-    border: solid 1px #e6e5e6; }
-    .nav1 .show-items:hover .item-btn {
-      border: #C00 solid 1px;
-      background: #C00; }
-  .nav1 #itemName {
-    width: 148px;
-    margin-top: 91px;
-    margin-bottom: -2px;
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
-    text-align: center; }
-  .nav1 #itemPrice {
-    width: 148px;
-    height: 16px;
-    font-size: 12px;
-    color: #9e9e9e;
-    text-align: center; }
-  .nav1 .img-btn {
-    width: 148px;
-    height: 133px;
-    background-image: url("http://powersports.honda.com/assets/GlobalNavigation/navigation_template_V2.jpg");
-    z-index: 100; }
-  .nav1 .item-btn {
-    padding: 4px 23px 2px 23px;
-    font-size: 10px;
-    border: #C00 solid 1px;
-    background: #C00;
-    color: #FFF; }
-  .nav1 .item-btn:hover {
-    background: #FFF !important;
-    color: #C00; }
-  .nav1 .btnRow {
+  .sxs .acc .accTitle {
+    width: 1195px;
+    height: 30px;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+    font-weight: 500;
+    font-weight: 900;
+    font-size: 30px;
+    color: #de1b22;
+    margin: 0 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .sxs .acc .accImgCon {
+    width: 1191px;
+    height: 765px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .sxs .acc .accImgCon .accInfo {
+      width: 385px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .sxs .acc .accImgCon .redArros {
+      height: 15px;
+      width: 365px;
+      margin: 20px 20px 60px 0;
+      display: flex;
+      justify-content: flex-end; }
+    .sxs .acc .accImgCon .accInfoH2 {
+      margin-top: 10px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      margin-top: 10px;
+      color: #de1b22;
+      text-transform: uppercase; }
+    .sxs .acc .accImgCon .lilRedBar {
+      background: #de1b22;
+      height: 3px;
+      width: 37px;
+      margin-bottom: 22px; }
+    .sxs .acc .accImgCon .accInfoH1 {
+      font-size: 18px;
+      font-weight: 500; }
+  .sxs .acc .cargo {
+    height: 500px;
+    width: 385px;
+    background: #F6F6F6; }
+    .sxs .acc .cargo .cargoPic {
+      height: 250px;
+      width: 385px;
+      margin-bottom: 20px;
+      background-image: url("https://powersports.honda.com/images/HL4/ac-1000/1000_BedExtender_450x293.png"); }
+  .sxs .acc .roof {
+    height: 500px;
+    width: 385px;
+    background: #F6F6F6; }
+    .sxs .acc .roof .roofImg {
+      height: 250px;
+      width: 385px;
+      margin-top: 66px;
+      background-image: url("https://powersports.honda.com/images/HL4/ac-1000/1000_FabricRoofRearPanel_450x293.png"); }
+  .sxs .acc .viewHard {
+    height: 500px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .sxs .acc .accViewTop {
+    height: 230px;
+    color: white;
+    background: #242424;
+    background-image: url("https://powersports.honda.com/images/HL4/black-stripe-tile.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .sxs .acc .accViewTop .aroBtn {
+      display: block;
+      height: 24px;
+      width: 24px;
+      margin-left: 5px;
+      margin-left: 10px;
+      margin-top: -5px;
+      background-image: url("https://powersports.honda.com/images/HL4/view-all-arrow.png"); }
+  .sxs .acc .accViewBot {
+    height: 257px;
+    background: #F6F6F6; }
+  .sxs .acc .wind {
+    width: 1195px;
+    height: 255px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+  .sxs .acc .windShield {
+    width: 790px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #F6F6F6; }
+    .sxs .acc .windShield .windImg {
+      height: 255px;
+      width: 390px;
+      background-image: url("https://powersports.honda.com/images/HL4/ac-1000/1000_GlassWindshield_450x293.png"); }
+  .sxs .acc .windDoor {
+    width: 384px;
+    height: 255px;
+    background-image: url("https://powersports.honda.com/images/HL4/ac-1000/1000_HardFrontDoors_450x293.png"); }
+
+.sxs .models {
+  height: 820px;
+  background: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sxs .models .mHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sxs .models .mHead .mHeadH1 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 800;
+      font-size: 30px;
+      letter-spacing: -1px;
+      color: #de1b22;
+      margin-bottom: 25px; }
+    .sxs .models .mHead .littleRedBar {
+      width: 36px;
+      height: 5px;
+      background: #de1b22;
+      margin-bottom: 25px; }
+    .sxs .models .mHead .mHeadH3 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 700;
+      letter-spacing: -1px;
+      font-size: 20px;
+      margin-bottom: 40px; }
+  .sxs .models .modelsContainer {
+    height: 500px;
+    width: 1155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .sxs .models .pion {
+    width: 566px;
+    height: 500px;
+    background: #FFFFFF; }
+  .sxs .models .pionTop {
+    height: 245px;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .sxs .models .poinImg {
+    height: 191px;
+    width: 262px; }
+  .sxs .models .pionPrice {
+    width: 262px;
+    height: 170px;
+    display: flex;
+    flex-direction: column; }
+    .sxs .models .pionPrice .piPriceh1 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: -1px;
+      font-size: 18px;
+      color: #242424;
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: row; }
+    .sxs .models .pionPrice .aroBtn {
+      display: block;
+      height: 24px;
+      width: 24px;
+      margin-left: 5px;
+      margin-left: 10px;
+      margin-top: -5px;
+      background-image: url("https://powersports.honda.com/images/HL4/view-all-arrow.png"); }
+    .sxs .models .pionPrice .piPriceh2 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -1px;
+      color: #de1b22;
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 5px; }
+    .sxs .models .pionPrice .piPriceh3 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 500;
+      font-style: normal;
+      font-size: 12px;
+      color: #4c4b4b; }
+    .sxs .models .pionPrice .piPriceh4 {
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -1px;
+      font-style: italic;
+      font-size: 12px;
+      color: #8a8a8a;
+      text-transform: lowercase;
+      margin-top: 3px;
+      margin-left: 1px; }
+  .sxs .models .pionRedBar {
+    width: 100%;
+    height: 5px;
+    background-color: #de1b22; }
+  .sxs .models .pionbot {
+    width: 100%;
+    height: 249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .sxs .models .pionInfo {
+    width: 485px; }
+    .sxs .models .pionInfo .pionOl {
+      margin-bottom: 35px; }
+    .sxs .models .pionInfo .pionBotLi {
+      font-family: 'HelveticaNeueW01-55Roma';
+      font-size: 14px;
+      margin-bottom: 5px;
+      padding-left: 2em;
+      text-indent: -1.4em;
+      line-height: 1;
+      font-size: 15px;
+      color: #4c4b4b; }
+    .sxs .models .pionInfo li:before {
+      content: "•";
+      color: #de1b22;
+      font-size: 24px;
+      vertical-align: middle;
+      padding-right: .2em; }
+  .sxs .models .pionBtns {
+    width: 485px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .sxs .models .pionBtns .pBtn {
+      width: 240px;
+      height: 53px;
+      border: 3px solid #de1b22;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .sxs .models .pionBtns #poinDetails {
+      background: #fff;
+      color: #242424;
+      font-size: 13px;
+      font-style: italic;
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 700;
+      letter-spacing: -1px; }
+    .sxs .models .pionBtns #poinBuild {
+      background: #de1b22;
+      color: #FFF;
+      font-size: 13px;
+      font-style: italic;
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 500;
+      font-style: italic; }
+  .sxs .models #p500 {
+    height: 191px;
+    width: 262px; }
+  .sxs .models #p700 {
+    height: 191px;
+    width: 262px; }
 
 .footer1 {
   background: black; }
@@ -715,7 +837,6 @@
     text-align: center;
     height: 44px;
     padding-bottom: 65px; }
-
 
 .footer2 .footerContainer {
   background: #2e2e2e; }
@@ -934,3 +1055,203 @@
     color: white;
     font-size: 12px;
     padding-bottom: 20px; }
+
+.nav1 {
+  background: transparent; }
+  .nav1 header {
+    max-width: 1024px;
+    min-width: 950px;
+    border: solid 1px #e6e5e6;
+    padding: 0 25px 20px;
+    font-family: Interstate;
+    margin: 0 auto;
+    z-index: 1;
+    color: #46494d;
+    background: white;
+    display: flex;
+    flex-direction: row; }
+  .nav1 #crosshair {
+    cursor: pointer; }
+  .nav1 #crosshair:hover {
+    color: #c00; }
+  .nav1 #branding {
+    width: 70px;
+    height: 70px;
+    background-image: url("http://powersports.honda.com/images/logoHonda.gif");
+    cursor: pointer;
+    margin-right: 22px; }
+  .nav1 .nav-wrapper {
+    width: 880px; }
+  .nav1 .nav-top {
+    margin-top: 7px;
+    margin-bottom: 12px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row; }
+  .nav1 #email {
+    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
+    background-position: 0 -309px;
+    width: 14px;
+    height: 9px;
+    display: inline-block;
+    padding-right: 17px; }
+  .nav1 #support {
+    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
+    background-position: 0 -1417px;
+    width: 12px;
+    height: 10px;
+    display: inline-block;
+    padding-right: 14px; }
+  .nav1 #login {
+    background-image: url("http://powersports.honda.com/images/header/honda-iconset.png");
+    background-position: 0 -1170px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    padding-right: 12px; }
+  .nav1 .top-links {
+    padding-left: 14px; }
+  .nav1 .text-box {
+    margin-left: 20px;
+    width: 113px;
+    height: 13px;
+    padding: 4px 5px 3px 20px;
+    transition: width 250ms linear; }
+  .nav1 .text-box:hover {
+    width: 200px; }
+  .nav1 .search-box {
+    position: relative; }
+  .nav1 .btnSearch {
+    width: 13px;
+    height: 13px;
+    text-indent: -9999px;
+    background: transparent url(http://powersports.honda.com/images/header/honda-iconset.png) !important;
+    background-position: 0 -502px !important;
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    border: none !important; }
+  .nav1 .nav-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13px; }
+  .nav1 .middle-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold; }
+  .nav1 .middle-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold; }
+  .nav1 .main-link {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 11px 13px; }
+  .nav1 .tools-link {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 11px 9px; }
+  .nav1 .tools-div {
+    color: white;
+    background: #c00;
+    border: #C00 solid 1px;
+    height: 15px;
+    padding: 0 7px 1px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+  .nav1 .tools-div:hover {
+    background: white;
+    color: #c00; }
+  .nav1 .Div-drop-down {
+    margin: 0 auto;
+    width: 948px;
+    min-height: 305px;
+    border: solid 1px #e6e5e6;
+    z-index: 1;
+    display: flex;
+    flex-direction: row; }
+  .nav1 .type-titles {
+    background: #eeeeee;
+    min-height: 305px;
+    width: 156px;
+    z-index: 10; }
+  .nav1 .title-holder {
+    padding: 19px 45px 19px 27px;
+    border-bottom: solid 1px #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black; }
+  .nav1 .title-holder:hover {
+    color: #C00;
+    background: white; }
+  .nav1 .itemsContainer {
+    background: #ffffff;
+    min-height: 305px;
+    width: 792px;
+    border-left: solid 1px #e6e5e6;
+    z-index: 10; }
+  .nav1 .items-holder {
+    padding: 15px 12px 0;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .nav1 .show-items {
+    text-align: center;
+    margin: 10px 12px 5px;
+    width: 148px;
+    height: 147px;
+    background: transparent;
+    display: flex;
+    flex-direction: column; }
+    .nav1 .show-items .item-btn {
+      border: white;
+      background: white; }
+  .nav1 .show-items:hover {
+    border: solid 1px #e6e5e6; }
+    .nav1 .show-items:hover .item-btn {
+      border: #C00 solid 1px;
+      background: #C00; }
+  .nav1 #itemName {
+    width: 148px;
+    margin-top: 91px;
+    margin-bottom: -2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-align: center; }
+  .nav1 #itemPrice {
+    width: 148px;
+    height: 16px;
+    font-size: 12px;
+    color: #9e9e9e;
+    text-align: center; }
+  .nav1 .img-btn {
+    width: 148px;
+    height: 133px;
+    background-image: url("http://powersports.honda.com/assets/GlobalNavigation/navigation_template_V2.jpg");
+    z-index: 100; }
+  .nav1 .item-btn {
+    padding: 4px 23px 2px 23px;
+    font-size: 10px;
+    border: #C00 solid 1px;
+    background: #C00;
+    color: #FFF; }
+  .nav1 .item-btn:hover {
+    background: #FFF !important;
+    color: #C00; }
+  .nav1 .btnRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+

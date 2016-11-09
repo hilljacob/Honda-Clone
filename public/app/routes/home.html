@@ -1,59 +1,62 @@
 <!-- this is the landing wrapper -->
 <div class="landing">
-  <nav1></nav1>
   <!-- this is the main image -->
-  <div class="mainImage">
-    <img id="image1" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/CRF250L_HPH.jpg" />
-    <img id="image2" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_CBR1000RR_v3.jpg" />
-    <img id="image3" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/02_adventurefamily_V1.jpg" />
-    <img id="image4" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016MotoGP_Report.jpg" />
-    <img id="image5" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ADVENTURE_v3.jpg" />
-    <img id="image6" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016_mototv2.jpg" />
-    <img id="image7" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2017_CRF_TF2.jpg" />
-    <img id="image8" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ACC_HERO.jpg" />
-  </div>
-  <!-- this is the div that pops up on hover -->
-  <div class="popUp">
-    <!-- this is the grey box that turns red when changing -->
-    <div class="tabPuller" ng-click="popper=!popper"></div>
-    <div class="popTop">
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
-      <div class="carouselTopper"></div>
+  <div class="carouselWrapper">
+    <nav1 class="nav"></nav1>
+    <div class="mainImage">
+      <img id="image1" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/CRF250L_HPH.jpg" />
+      <img id="image2" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_CBR1000RR_v3.jpg" />
+      <img id="image3" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/02_adventurefamily_V1.jpg" />
+      <img id="image4" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016MotoGP_Report.jpg" />
+      <img id="image5" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ADVENTURE_v3.jpg" />
+      <img id="image6" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016_mototv2.jpg" />
+      <img id="image7" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2017_CRF_TF2.jpg" />
+      <img id="image8" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ACC_HERO.jpg" />
     </div>
-    <!-- this is the div that contains the images on the carousel -->
-    <div class="popBot" ng-hide="popper">
-      <div id="image1" class="carouselContainer demo" ng-click="currentDiv(1)">
-        <div class="imageCover">GIFTS THAT GO</div>
+    <!-- this is the div that pops up on hover -->
+    <div class="popUp" ng-mouseenter="popper=false" ng-mouseleave="popper=true">
+      <!-- this is the grey box that turns red when changing -->
+      <div class="tabPuller" ng-click="popper=!popper"></div>
+      <div class="popTop">
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
+        <div class="carouselTopper"></div>
       </div>
-      <div id="image2" class="carouselContainer demo" ng-click="currentDiv(2)">
-        <div class="imageCover">MARC MARQUEZ WINS!</div>
-      </div>
-      <div id="image3" class="carouselContainer demo" ng-click="currentDiv(3)">
-        <div class="imageCover">KEN ROCZEN TAKES 1ST!</div>
-      </div>
-      <div id="image4" class="carouselContainer demo" ng-click="currentDiv(4)">
-        <div class="imageCover">YOUR PASSPORT TO ADVENTURE</div>
-      </div>
-      <div id="image5" class="carouselContainer demo" ng-click="currentDiv(5)">
-        <div class="imageCover">THE ALL-NEW 2017 CBR 1000RR SP & SP2 </div>
-      </div>
-      <div id="image6" class="carouselContainer demo" ng-click="currentDiv(6)">
-        <div class="imageCover">HONDA MOTO 2017</div>
-      </div>
-      <div id="image7" class="carouselContainer demo" ng-click="currentDiv(7)">
-        <div class="imageCover">THE ALL-NEW 2017 CRF450R & CRF450RX</div>
-      </div>
-      <div id="image8" class="carouselContainer demo" ng-click="currentDiv(8)">
-        <div class="imageCover">THE ACCESSORIES STORE IS NOW OPEN</div>
+      <!-- this is the div that contains the images on the carousel -->
+      <div class="popBot" ng-hide="popper">
+        <div id="image1" class="carouselContainer demo" ng-click="currentDiv(1)">
+          <div class="imageCover">The All-New 2017 CRF250L Rally and CRF250L</div>
+        </div>
+        <div id="image2" class="carouselContainer demo" ng-click="currentDiv(2)">
+          <div class="imageCover">The All-New 2017 CBR1000RR</div>
+        </div>
+        <div id="image3" class="carouselContainer demo" ng-click="currentDiv(3)">
+          <div class="imageCover">GIFTS THAT GO</div>
+        </div>
+        <div id="image4" class="carouselContainer demo" ng-click="currentDiv(4)">
+          <div class="imageCover">Marc MÁrquez wins!</div>
+        </div>
+        <div id="image5" class="carouselContainer demo" ng-click="currentDiv(5)">
+          <div class="imageCover">Your Passport to Adventure</div>
+        </div>
+        <div id="image6" class="carouselContainer demo" ng-click="currentDiv(6)">
+          <div class="imageCover">Honda Moto 2017</div>
+        </div>
+        <div id="image7" class="carouselContainer demo" ng-click="currentDiv(7)">
+          <div class="imageCover">The All-New 2017 CRF450R & CRF450RX</div>
+        </div>
+        <div id="image8" class="carouselContainer demo" ng-click="currentDiv(8)">
+          <div class="imageCover">The Accessories Store is Now Open</div>
+        </div>
       </div>
     </div>
   </div>
+
   <!-- the bottom 5 divs start here -->
   <div class="bottomLinksContainer">
     <!-- this holds and centers the content -->

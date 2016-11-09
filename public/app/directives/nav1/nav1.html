@@ -38,7 +38,7 @@
         </div>
         <div class="itemsContainer">
           <div class="items-holder">
-            <div class="show-items" ng-repeat="item in items | filter: {motor_type_id:selectedItem}">
+            <div class="show-items" ng-repeat="item in items | filter: {motor_type_id:selectedItem}: true">
               <div class="img-btn" style="background-position: {{item.image_location}}" href="#">
                 <h1 id="itemName">{{item.item_name}}</h1>
                 <h2 id="itemPrice">{{item.price}}</h2>

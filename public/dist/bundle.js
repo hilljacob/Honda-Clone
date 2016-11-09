@@ -365,6 +365,8 @@ angular.module('personalPro').directive('nav1', function(){
 
 angular.module('personalPro').controller('nav1Ctrl', ["$scope", "motorServ", function($scope, motorServ){
 
+      $scope.selectedItem = 1;
+      $scope.filter = 1;
 
       motorServ.getItems().then(function(response){
         $scope.items = response;
@@ -381,6 +383,7 @@ angular.module('personalPro').controller('nav1Ctrl', ["$scope", "motorServ", fun
 
       $scope.filterType = function(type){
         $scope.selectedItem = type;
+
       }
 
 }])

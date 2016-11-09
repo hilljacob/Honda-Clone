@@ -1,232 +1,541 @@
 .sxs{
-  // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
-  .pioneer{
+  .topThreeContain{
+    // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
+    .navContainer{
+      .navTop{
+
+      }
+      .navBot{
+
+      }
+    }
+
+    // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
+    .pioneer{
+      .pioneerContainer{
+
+      }
+      .titleImage{
+
+      }
+      .explorBtn{
+
+      }
+    }
+
+    // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
+    .mainImage{
+
+    }
+    // ((((((((((((((((((((((((((colorChanger))))))))))))))))))))))))))
+    .colorChanger{
+      .colorContainer{
+
+      }
+      .colorMenu{
+
+      }
+      .colortop{
+
+      }
+      .colortopleft{
+
+      }
+      .colortopright{
+
+      }
+      .colorBottom{
+
+      }
+      .colorBtLeft{
+
+      }
+      .colorBtMid{
+
+      }
+      .colorBtRight{
+
+      }
+    }
 
   }
-  .pioneerContainer{
-
-  }
-  .titleImage{
-
-  }
-  .explorBtn{
-
-  }
-  // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
-  .mainImage{
-
-  }
-  // ((((((((((((((((((((((((((colorChanger))))))))))))))))))))))))))
-  .colorChanger{
-
-  }
-  .colorContainer{
-
-  }
-  .colorMenu{
-
-  }
-  .colortop{
-
-  }
-  .colortopleft{
-
-  }
-  .colortopright{
-
-  }
-  .colorBottom{
-
-  }
-  .colorBtLeft{
-
-  }
-  .colorBtMid{
-
-  }
-  .colorBtRight{
-
-  }
-
   // ((((((((((((((((((((((((((gallery))))))))))))))))))))))))))
   .gallery{
+    .innerContainer{
 
-  }
-  .innerContainer{
+    }
+    .galContainer{
 
-  }
-  .galContainer{
+    }
+    .itsNotJust{
 
-  }
-  .itsNotJust{
+    }
+    .wePacked{
 
-  }
-  .wePacked{
+    }
+    .viewGal{
 
-  }
-  .viewGal{
+    }
+    #hideIfSmall{
 
-  }
-  #hideIfSmall{
+    }
+    #gimage1{
 
-  }
-  #gimage1{
+    }
+    #gimage2{
 
-  }
-  #gimage2{
+    }
+    #gimage3{
 
-  }
-  #gimage3{
+    }
+    #gimage4{
 
-  }
-  #gimage4{
+    }
+    #gimage5{
 
-  }
-  #gimage5{
+    }
+    #gimage6{
 
-  }
-  #gimage6{
+    }
+    #gimage7{
 
-  }
-  #gimage7{
+    }
+    #gimage8{
 
-  }
-  #gimage8{
+    }
+    #gimage9{
 
+    }
   }
-  #gimage9{
 
-  }
   // ((((((((((((((((((((((((((specs))))))))))))))))))))))))))
   .specs{
+    .spesContainer{
 
-  }
-  .spesContainer{
+    }
+    .specTitle{
 
-  }
-  .specTitle{
+    }
+    .specImgCon{
 
-  }
-  .specImgCon{
+    }
+    .tow{
 
-  }
-  .tow{
+    }
+    .trans{
 
-  }
-  .trans{
+    }
+    .tankPic{
 
-  }
-  .tankPic{
+    }
+    .suspension{
 
-  }
-  .suspension{
+    }
+    .engine{
 
-  }
-  .engine{
+    }
+    .fuel{
 
-  }
-  .fuel{
+    }
+    .viewSpec{
 
-  }
-  .viewSpec{
+    }
 
   }
 
   // ((((((((((((((((((((((((((features))))))))))))))))))))))))))
   .features{
+    .feTitle{
 
-  }
-  .feTitle{
+    }
+    .tabsTable{
 
-  }
-  .tabsTable{
+    }
+    .compairModels{
 
+    }
   }
-  .compairModels{
 
-  }
 
   // ((((((((((((((((((((((((((acc))))))))))))))))))))))))))
   .acc{
+    height: 1130px;
+    background: #FFFFFF;
 
-  }
-  .accContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .accContainer{
+      width: 1195px;
+      height: 855px;
 
-  }
-  .accTitle{
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
 
-  }
-  .accImgCon{
+      // background: blue;
+    }
+    .accTitle{
+      width: 1195px;
+      height: 30px;
+      font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+      font-weight: 500;
+      font-weight: 900;
+      font-size: 30px;
+      color: #de1b22;
+      margin: 0 0 60px;
 
-  }
-  .cargo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  }
-  .roof{
+      // background: green;
+    }
+    .accImgCon{
+      width: 1191px;
+      height: 765px;
 
-  }
-  .viewHard{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .accInfo{
+        width: 385px;
 
-  }
-  .accViewTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .redArros{
+        height: 15px;
+        width: 365px;
+        margin: 20px 20px 60px 0;
 
-  }
-  .accViewBtn{
+        display: flex;
+        justify-content: flex-end;
+        .redArroImg{
 
-  }
-  .wind{
+        }
+      }
+      .accInfoH2{
+        margin-top: 10px;
+        margin-bottom: 22px;
+        font-size: 13px;
+        margin-top: 10px;
+        color: #de1b22;
+        text-transform: uppercase;
+      }
+      .lilRedBar{
+        background: #de1b22;
+        height: 3px;
+        width: 37px;
+        margin-bottom: 22px;
+      }
+      .accInfoH1{
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .cargo{
+      height: 500px;
+      width: 385px;
 
-  }
-  .windShield{
+      background: #F6F6F6;
+      .cargoPic{
+        height: 250px;
+        width: 385px;
+        margin-bottom: 20px;
+        background-image: url('https://powersports.honda.com/images/HL4/ac-1000/1000_BedExtender_450x293.png');
+      }
+    }
+    .roof{
+      height: 500px;
+      width: 385px;
 
-  }
-  .windDoor{
+      background: #F6F6F6;
+      .roofImg{
+        height: 250px;
+        width: 385px;
+        margin-top: 66px;
+        background-image: url('https://powersports.honda.com/images/HL4/ac-1000/1000_FabricRoofRearPanel_450x293.png');
+
+      }
+    }
+    .viewHard{
+      height: 500px;
+      width: 385px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .accViewTop{
+      height: 230px;
+      color: white;
+      background: #242424;
+      background-image: url('https://powersports.honda.com/images/HL4/black-stripe-tile.jpg');
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .aroBtn{
+        display: block;
+        height: 24px;
+        width: 24px;
+        margin-left: 5px;
+        margin-left: 10px;
+        margin-top: -5px;
+        background-image: url('https://powersports.honda.com/images/HL4/view-all-arrow.png');
+      }
+    }
+    .accViewBot{
+      height: 257px;
+      background: #F6F6F6;
+    }
+    .wind{
+      width: 1195px;
+      height: 255px;
+      margin-top: 10px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .windShield{
+      width: 790px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      background: #F6F6F6;
+      .windImg{
+        height: 255px;
+        width: 390px;
+        background-image: url('https://powersports.honda.com/images/HL4/ac-1000/1000_GlassWindshield_450x293.png');
+      }
+    }
+    .windTextCon{
+
+    }
+    .windDoor{
+      width: 384px;
+      height: 255px;
+      background-image: url('https://powersports.honda.com/images/HL4/ac-1000/1000_HardFrontDoors_450x293.png');
+      // background: #F6F6F6;
+    }
 
   }
 
   // ((((((((((((((((((((((((((modles))))))))))))))))))))))))))
-  .acc{
+  .models{
+    height: 820px;
+    background: #EBEBEB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mHead{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .mHeadH1{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: -1px;
+        color: #de1b22;
+        margin-bottom: 25px;
+      }
+      .littleRedBar{
+        width: 36px;
+        height: 5px;
+        background: #de1b22;
+        margin-bottom: 25px;
+
+      }
+      .mHeadH3{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 700;
+        letter-spacing: -1px;
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+    }
+    .modelsContainer{
+      height: 500px;
+      width: 1155px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .pion{
+      width: 566px;
+      height: 500px;
+      background: #FFFFFF;
+    }
+    .pionTop{
+      height: 245px;
+      width: 100%;
+      padding-top: 30px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      // background: blue;
+    }
+    .poinImg{
+      height: 191px;
+      width: 262px;
+    }
+    .pionPrice{
+      width: 262px;
+      height: 170px;
+
+      display: flex;
+      flex-direction: column;
+
+      // background: yellow;
+      .piPriceh1{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: -1px;
+        font-size: 18px;
+        color: #242424;
+        padding: 30px 0px;
+
+        display: flex;
+        flex-direction: row;
+      }
+      .aroBtn{
+        display: block;
+        height: 24px;
+        width: 24px;
+        margin-left: 5px;
+        margin-left: 10px;
+        margin-top: -5px;
+        background-image: url('https://powersports.honda.com/images/HL4/view-all-arrow.png');
+      }
+      .piPriceh2{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: -1px;
+        color: #de1b22;
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      .piPriceh3{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 12px;
+        color: #4c4b4b;
+      }
+      .piPriceh4{
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: -1px;
+        font-style: italic;
+        font-size: 12px;
+        color: #8a8a8a;
+        text-transform: lowercase;
+        margin-top: 3px;
+        margin-left: 1px;
+      }
+    }
+    .pionRedBar{
+      width: 100%;
+      height: 5px;
+      background-color: #de1b22;
+    }
+    .pionbot{
+      width: 100%;
+      height: 249px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      // background: green;
+    }
+    .pionInfo{
+      width: 485px;
+      .pionOl{
+        margin-bottom: 35px;
+      }
+      .pionBotLi{
+        font-family: 'HelveticaNeueW01-55Roma';
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding-left: 2em;
+        text-indent: -1.4em;
+        line-height: 1;
+        font-size: 15px;
+        color: #4c4b4b;
+      }
+      li:before{
+        content: "•";
+        color: #de1b22;
+        font-size: 24px;
+        vertical-align: middle;
+        padding-right: .2em;
+      }
+    }
+    .pionBtns{
+      width: 485px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .pBtn{
+        width: 240px;
+        height: 53px;
+        border: 3px solid #de1b22;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #poinDetails{
+        background: #fff;
+        color: #242424;
+        font-size: 13px;
+        font-style: italic;
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+      #poinBuild{
+        background: #de1b22;
+        color: #FFF;
+        font-size: 13px;
+        font-style: italic;
+        font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+        font-weight: 500;
+        font-style: italic;
+      }
+    }
+
+    #p500{
+      height: 191px;
+      width: 262px;
+      // background-image: url('https://powersports.honda.com/images/HL4/2017_Pioneer500_Red.png');
+    }
+    #p700{
+      height: 191px;
+      width: 262px;
+      // background-image: url('https://powersports.honda.com/images/HL4/Pioneer_700_model.png');
+    }
 
   }
-  .accContainer{
-
-  }
-  .accTitle{
-
-  }
-  .accImgCon{
-
-  }
-  .cargo{
-
-  }
-  .roof{
-
-  }
-  .viewHard{
-
-  }
-  .accViewTop{
-
-  }
-  .accViewBtn{
-
-  }
-  .wind{
-
-  }
-  .windShield{
-
-  }
-  .windDoor{
-
-  }
-  #p500{
-
-  }
-  #p700{
-
-  }
-
   // verything to add needs to be ablove this line
 }

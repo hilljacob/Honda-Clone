@@ -1,5 +1,7 @@
 angular.module('personalPro').controller('nav1Ctrl', function($scope, motorServ){
 
+      $scope.selectedItem = 1;
+      $scope.filter = 1;
 
       motorServ.getItems().then(function(response){
         $scope.items = response;
@@ -16,6 +18,7 @@ angular.module('personalPro').controller('nav1Ctrl', function($scope, motorServ)
 
       $scope.filterType = function(type){
         $scope.selectedItem = type;
+
       }
 
 })
