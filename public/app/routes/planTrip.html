@@ -1,5 +1,81 @@
-<nav2></nav2>
+<div class="tripPlannerHolder">
+  <header class="navHead">
+    <div class="logoHolder"><img class="tripLogo" src="http://tripplanner.honda.com/images/tripplanner-logo.jpg"/></div>
+    <div class="headLinks">
+      <h1 ui-sref="home" class="headH1 padRight1">RETURN HOME</h1>
+      <h3 class="headH3 padRight1">SIGN IN</h3>
+      <h3 class="headH3 padRight1">|</h3>
+      <h3 class="headH3 padRight2">REGISTER</h3>
+      <h3 class="headH3 padRight2">HELP & SUPPORT</h3>
+    </div>
+  </header>
+  <main class="mainholder">
+    <section class="leftholder">
+      <h1 class="leftholdH1">PLAN A TRIP</h1>
+      <div class="buttoHolder">
+        <div class="mainBtn" ng-click="show= flase"><h1 id="mBtn1" >EDIT STOPS</h1></div>
+        <div class="mainBtn"><h1 id="mBtn2" >TRIP SUMMARY</h1></div>
+        <div class="mainBtn" ng-click="show= !show"><h1 id="mBtn3" >DIRVING DIRECTIONS</h1></div>
+      </div>
 
-<h1><strong>PLAN TRIP</strong></h1>
 
-<footer2></footer2>
+
+      <div class="searchContainer">
+
+        <!-- this is where im hiding the spot to search from -->
+        <div class="searchNav">
+
+
+
+          <h1 class="SearchTitle">Enter Starting Location</h1>
+          <!-- this is the input for the starting location -->
+          <input id="start" ng-model="start.text" class="searchInput" type="text" name="from" placeholder="Enter from Address">
+
+
+
+          <h1 class="SearchTitle">Enter Ending Location</h1>
+          <!-- this is the input for the ending location -->
+          <input id="end" ng-model="end.text" class="searchInput" type="text" name="to" placeholder="Enter To Address">
+
+
+
+          <h1 class="SearchTitle2"><span><input type="checkbox"></span>Avoid Highways</h1>
+          <!-- this is where we are submiting directions -->
+          <div ng-click="onChangeHandler()" class="SubBtn">Get Directions</div>
+          <div class="planningTips">
+            <h1 class="planningH1">Planning Tip</h1>
+            <p class="planningP">
+              Use the tools above to manage your trip.
+            </p>
+            <ul class="planUl">
+              You may:
+              <li class="planLi">Save your trip</li>
+              <li class="planLi">Print out the Trip Summary and Driving Directions</li>
+              <li class="planLi">Export your trip to your GPS</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <!-- this is where i'm trying so show the direction------------------- -->
+        <div id="right-panel" class="directions" ng-show="show" ></div>
+      </div>
+    </section>
+    <section class="mapholder">
+      <!-- <div id="floating-panel">
+          <strong>Start:</strong>
+          <input id="start" type="text" placeholder="From Address">
+          <br>
+          <strong>End:</strong>
+          <input id="end" type="text" placeholder="To Address">
+      </div> -->
+      <div id="map"></div>
+      <!-- <div id="right-panel"></div> -->
+      <!-- <div id="right-panel" class="rightBox"></div> -->
+    </section>
+  </main>
+
+
+</div>
+<footer1></footer1>

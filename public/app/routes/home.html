@@ -1,5 +1,110 @@
-<nav1></nav1>
-
-<h1><strong>HOME</strong></h1>
-
+<!-- this is the landing wrapper -->
+<div class="landing">
+  <nav1></nav1>
+  <!-- this is the main image -->
+  <div class="mainImage">
+    <img id="image1" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/CRF250L_HPH.jpg" />
+    <img id="image2" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_CBR1000RR_v3.jpg" />
+    <img id="image3" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/02_adventurefamily_V1.jpg" />
+    <img id="image4" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016MotoGP_Report.jpg" />
+    <img id="image5" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ADVENTURE_v3.jpg" />
+    <img id="image6" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2016_mototv2.jpg" />
+    <img id="image7" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_2017_CRF_TF2.jpg" />
+    <img id="image8" class="mySlides" src="http://powersports.honda.com/documentum/hero/feature_images/HPH_ACC_HERO.jpg" />
+  </div>
+  <!-- this is the div that pops up on hover -->
+  <div class="popUp">
+    <!-- this is the grey box that turns red when changing -->
+    <div class="tabPuller" ng-click="popper=!popper"></div>
+    <div class="popTop">
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+      <div class="carouselTopper"></div>
+    </div>
+    <!-- this is the div that contains the images on the carousel -->
+    <div class="popBot" ng-hide="popper">
+      <div id="image1" class="carouselContainer demo" ng-click="currentDiv(1)">
+        <div class="imageCover">GIFTS THAT GO</div>
+      </div>
+      <div id="image2" class="carouselContainer demo" ng-click="currentDiv(2)">
+        <div class="imageCover">MARC MARQUEZ WINS!</div>
+      </div>
+      <div id="image3" class="carouselContainer demo" ng-click="currentDiv(3)">
+        <div class="imageCover">KEN ROCZEN TAKES 1ST!</div>
+      </div>
+      <div id="image4" class="carouselContainer demo" ng-click="currentDiv(4)">
+        <div class="imageCover">YOUR PASSPORT TO ADVENTURE</div>
+      </div>
+      <div id="image5" class="carouselContainer demo" ng-click="currentDiv(5)">
+        <div class="imageCover">THE ALL-NEW 2017 CBR 1000RR SP & SP2 </div>
+      </div>
+      <div id="image6" class="carouselContainer demo" ng-click="currentDiv(6)">
+        <div class="imageCover">HONDA MOTO 2017</div>
+      </div>
+      <div id="image7" class="carouselContainer demo" ng-click="currentDiv(7)">
+        <div class="imageCover">THE ALL-NEW 2017 CRF450R & CRF450RX</div>
+      </div>
+      <div id="image8" class="carouselContainer demo" ng-click="currentDiv(8)">
+        <div class="imageCover">THE ACCESSORIES STORE IS NOW OPEN</div>
+      </div>
+    </div>
+  </div>
+  <!-- the bottom 5 divs start here -->
+  <div class="bottomLinksContainer">
+    <!-- this holds and centers the content -->
+    <div class="bottomContent">
+      <!-- box one is different from the rest -->
+      <div id="Box1" class="LinkBoxes">
+        <div class="box1Top">
+          <h1 class="box1H1">2016 & PRIOR CRF450R</h1>
+          <div class="motoImg"></div>
+        </div>
+        <div class="box1Bot">
+          <h1 class="box1BotH1">$1,000</h1>
+          <h2 class="box1BotH2">Bonus Bucks</h2>
+          <h3 class="box1BotH3">on 2016 and prior CRF450R</h3>
+          <!-- this is where you find the two red buttons on the div -->
+          <div class="bottomBtnCon">
+            <div class="BotBtn">FULL DETAILS</div>
+            <div class="BotBtn">SEE ALL OFFERS</div>
+          </div>
+        </div>
+      </div>
+      <!-- box 2 3 4 5 are pretty much clones but with different content -->
+      <div id="Box2" class="LinkBoxes">
+        <div ng-mouseenter="hideMe=!show" ng-mouseleave="hideMe=show" class="boxBot">
+          <h2 class="boxBotH2">PIONEER 1000</h2>
+          <div class="boxBotBtn">SEE OFFER</div>
+          <h3 ng-show="hideMe" class="boxBotH3">Don't miss out on this great accessory offer!</h3>
+        </div>
+      </div>
+      <div id="Box3" class="LinkBoxes">
+        <div ng-mouseenter="hideMe2=!show" ng-mouseleave="hideMe2=show" class="boxBot">
+          <h2 class="boxBotH2">PLAN YOUR TRIP</h2>
+          <div ui-sref="planTrip" class="boxBotBtn">START NOW</div>
+          <h3 ng-show="hideMe2" class="boxBotH3">Don't let your next ride slip through your fingers!</h3>
+        </div>
+      </div>
+      <div id="Box4" class="LinkBoxes">
+        <div ng-mouseenter="hideMe3=!show" ng-mouseleave="hideMe3=show" class="boxBot">
+          <h2 class="boxBotH2">LEARN TO RIDE</h2>
+          <div class="boxBotBtn">VISIT SITE</div>
+          <h3 ng-show="hideMe3" class="boxBotH3">Make the leap from new learner to new rider.</h3>
+        </div>
+      </div>
+      <div id="Box5" class="LinkBoxes">
+        <div ng-mouseenter="hideMe4=!show" ng-mouseleave="hideMe4=show" class="boxBot">
+          <h2 class="boxBotH2">HONDA DCT</h2>
+          <div class="boxBotBtn">VISIT SITE</div>
+          <h3 ng-show="hideMe4" class="boxBotH3">With DCT, motorcycles have true freedom.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <footer1></footer1>

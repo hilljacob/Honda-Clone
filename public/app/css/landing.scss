@@ -1,1 +1,267 @@
+.landing{
+  position: relative;
+  // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
+  .mainImage{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: #C7C7C7;
+    height: 770px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .mySlides{
+      width: 1600px;
+      height: 770px;
+    }
+  }
+  // ((((((((((((((((((((((((((popUp))))))))))))))))))))))))))
+  .popUp{
+    margin-top: 534px;
+    // height: 117px;
+    // background: #8c8c8c;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tabPuller{
+      height: 29px;
+      width: 100px;
+      // background: red;
+      background-position: -5px 30px;
+      background-image: url('http://powersports.honda.com/images/home/hero_slider_btn.png');
+    }
+    .popTop{
+      height: 5px;
+      width: 1600px;
+      max-width: 1600px;
+      background: #CCCCCC;
+
+      display: flex;
+      flex-direction: row;
+      .carouselTopper{
+        height: 5px;
+        width: 200px;
+        background: #CCCCCC;
+
+      }
+      .backRed{
+        height: 5px;
+        width: 200px;
+        background: #c00;
+      }
+    }
+    .popBot{
+      width: 1600px;
+      // max-width: 1600px;
+      height: 110px;
+
+      display: flex;
+      flex-direction: row;
+      .carouselContainer{
+        height: 110px;
+        width: 200px;
+        cursor: pointer;
+
+
+        .imageCover{
+          background: rgba(black, 0.5);
+          color: white;
+        }
+      }
+    }
+    .backRed{
+      background: #c00;
+    }
+    #image1{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CRF250L.jpg');
+    }
+    #image2{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_THUMB_CBR1000RR_v3.jpg');
+    }
+    #image3{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016_GTG_THUMB.jpg');
+    }
+    #image4{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2016MotoGP_THUMB.jpg');
+    }
+    #image5{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/Rever_Thumb.jpg');
+    }
+    #image6{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/mototv_Thumb.jpg');
+    }
+    #image7{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_2017_CRF_thumb.jpg');
+    }
+    #image8{
+      background-image: url('http://powersports.honda.com/documentum/hero/thumbnail_images/HPH_ACC_Thumb.jpg');
+    }
+
+  }
+  // ((((((((((((((((((((((((((Bottom 5))))))))))))))))))))))))))
+  .bottomLinksContainer{
+    height: 215px;
+    background: #C7C7C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 27px;
+
+
+    .bottomContent{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      background: #f2f2f2;
+      width: 1230px;
+      height: 215px;
+      padding: 0 25px;
+
+      .LinkBoxes{
+        border: solid 1px #e0e0e0;
+        width: 230px;
+        height: 196px;
+        background: white;
+        display: flex;
+        align-items: flex-end;
+        // flex-direction: row;
+
+      }
+      .box1Top{
+        width: 228px;
+
+        display: flex;
+        flex-direction: row;
+        // background: green;
+      }
+      .box1Bot{
+        // background: blue;
+        width: 228px;
+        text-align: center;
+      }
+      .box1H1{
+        font-family: Interstate;
+        font-size: 14px;
+        font-weight: bold;
+        color: #C00;
+        width: 89px;
+        padding: 15px 0 0 10px;
+      }
+      .motoImg{
+        width: 135px;
+        height: 87px;
+        background-image: url('http://powersports.honda.com/documentum/featured_offers/images/2016_CRF450R_145x90_Red_trans.png');
+      }
+
+
+      .box1BotH1{
+        margin-top: 5px;
+        font-size: 22px;
+        color: #b80000;
+        font-weight: bold;
+      }
+      .box1BotH2{
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .box1BotH3{
+        font-size: 10px;
+        margin-bottom: 30px;
+      }
+      .bottomBtnCon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        // background: grey;
+      }
+      .BotBtn{
+        height: 20px;
+        width: 105px;
+        border: #C00 solid 1px;
+        background: #C00;
+        color: #FFF;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .BotBtn:hover{
+        color: #C00;
+        background: white;
+      }
+      .boxBot{
+        height: 45px;
+        width: 230px;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .boxBot:hover{
+        height: 65px;
+        .boxBotH2{
+          color: #c00;
+        }
+      }
+      .boxBotH2{
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      .boxBotBtn{
+        height: 20px;
+        width: 72px;
+        border: #C00 solid 1px;
+        background: #C00;
+        color: #FFF;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .boxBotBtn:hover{
+        color: #C00;
+        background: white;
+      }
+      .boxBotH3{
+        font-size: 11px;
+        width: 134px;
+        color:  #716f6f;
+        padding-left: 10px;
+        margin-top: -25px;
+      }
+
+      #Box1{
+        display: flex;
+        flex-direction: column;
+      }
+      #Box2{
+        background-image: url('http://powersports.honda.com/documentum/hero/callout_images/Pioneer.jpg');
+        .boxBotBtn{
+          margin-left: 56px;
+        }
+      }
+      #Box3{
+        background-image: url('http://powersports.honda.com/documentum/hero/callout_images/trip-planner-callout.png');
+        .boxBotBtn{
+          margin-left: 36px;
+        }
+      }
+      #Box4{
+        background-image: url('http://powersports.honda.com/documentum/hero/callout_images/learn-to-ride-callout.png');
+        .boxBotBtn{
+          margin-left: 43px;
+        }
+      }
+      #Box5{
+        background-image: url('http://powersports.honda.com/documentum/hero/callout_images/Honda_DCT.jpg');
+        .boxBotBtn{
+          margin-left: 65px;
+        }
+      }
+    }
+  }
+}

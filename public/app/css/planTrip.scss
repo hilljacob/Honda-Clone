@@ -1,0 +1,250 @@
+.tripPlannerHolder{
+  .navHead{
+    width: 100vw;
+    height: 79px;
+    color: white;
+    // background: blue;
+    background-image:url('http://tripplanner.honda.com/images/bg-header.jpg');
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logoHolder{
+      display: flex;
+      align-items: center;
+    }
+    .tripLogo{
+      // width: 37.5vw;
+      max-width: 44.5vw;
+
+      height: 50px;
+      background: red;
+      margin-left: 50px;
+    }
+    .headLinks{
+      // width: 62.5vw;
+      height: 79px;
+      // background: purple;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 10px;
+    }
+    .headH1{
+      font-size: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .headH3{
+      font-size: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .padRight1{
+      padding-right: 20px;
+    }
+    .padRight2{
+      padding-right: 25px;
+    }
+
+  }
+  .mainholder{
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
+    .leftholder{
+      width: 50.5vw;
+      max-width: 465px;
+      // height: 100vh;
+      // background: blue;
+      .leftholdH1{
+        height: 25px;
+        background: #666666;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+      }
+      .buttoHolder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 42px;
+        .mainBtn{
+          background: #DCDCDC;
+          height: 42px;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;;
+          text-align: center;
+          color: #DE1B23;
+          border: 1px solid #999;
+        }
+        .mainBtn:hover{
+          color: black;
+          background: white;
+          border-bottom: none;
+        }
+        #mBtn1{
+          width: 120px;
+        }
+        #mBtn2{
+          width: 155px;
+        }
+        #mBtn3{
+          width: 185px;
+        }
+      }
+      .searchContainer{
+        background: white;
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        .searchNav{
+          padding-left: 20px;
+          background: #ebedea;
+          width: 300px;
+          height: 70vh;
+          margin-top: 40px;
+          border: solid 1px #999;
+          // margin-left: 5px;
+          display: flex;
+          flex-direction: column;
+          .SearchTitle{
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            margin-top: 10px;
+          }
+          .SearchTitle2{
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-bottom: 10px;
+          }
+          .searchInput{
+            width: 255px;
+            height: 25px;
+            // padding: 6px 12px;
+            font-size: 13px;
+
+          }
+          .SubBtn{
+            height: 33px;
+            width: 111px;
+            background: #E26569;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+          }
+          .planningTips{
+            .planningH1{
+              font-size: 17px;
+              margin-top: 9px;
+              margin-bottom: 9px;
+              font-weight: 500;
+            }
+            .planningP{
+              font-size: 13px;
+              margin: 0 0 9px;
+            }
+            .planUl{
+              list-style-type: circle;
+              .planLi{
+                margin-left: 50px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        .directions{
+          width: 400px;
+          height: 75vh;
+          margin-top: 50px;
+          border: solid 1px #999;
+          position: absolute;
+          top: -11px;
+          // background: #DCDCDC;
+          background: white;
+          z-index: 10;
+        }
+      }
+    }
+    // this is where all the crazy map stuff is happening ------------------------------
+    .mapholder{
+      display: flex;
+      flex-direction: row;
+
+    }
+    #map {
+      height: 904px;
+      // width: 1000px;
+      width: 100vw;
+    }
+    // .leftBox{
+    //   width: 1000px;
+    //   height: 904px;
+    //   background: red;
+    // }
+    .rightBox{
+      width: 440px;
+      height: 904px;
+      margin-left: 0px;
+
+    }
+    #floating-panel {
+      position: absolute;
+      top: 10px;
+      left: 25%;
+      z-index: 5;
+      background-color: #fff;
+      padding: 5px;
+      border: 1px solid #999;
+      text-align: center;
+      font-family: 'Roboto','sans-serif';
+      line-height: 30px;
+      padding-left: 10px;
+    }
+    #right-panel {
+      font-family: 'Roboto','sans-serif';
+      line-height: 30px;
+      padding: 0 5px;
+    }
+
+    #right-panel select, #right-panel input {
+      font-size: 15px;
+    }
+
+    #right-panel select {
+      width: 100%;
+    }
+
+    #right-panel i {
+      font-size: 12px;
+    }
+    #right-panel {
+      // height: 100%;
+      float: right;
+      // width: 440px;
+      overflow: auto;
+    }
+    #map {
+      // margin-right: 400px;
+    }
+    #floating-panel {
+      background: #fff;
+      padding: 5px;
+      font-size: 14px;
+      font-family: Arial;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+      display: none;
+    }
+  }
+
+}

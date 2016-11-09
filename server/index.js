@@ -30,12 +30,17 @@ app.use(express.static(__dirname + './../public'));
 app.set('db', massiveServ);
 var db = app.get('db')
 
+// has to be below database setup
 var motorsCtrl = require('./controllers/motorsCtrl.js');
 
+// my get statements
 app.get('/items', motorsCtrl.getAll);
 
 app.get('/item', motorsCtrl.getOne);
 
+app.get('/category', motorsCtrl.getCat);
+
+app.get('/type', motorsCtrl.getType);
 
 
 

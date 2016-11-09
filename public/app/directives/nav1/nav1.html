@@ -1,24 +1,54 @@
 <div class="nav1">
-  <!-- <h1>This is nav1</h1> -->
-  <br>
-  <ul>
-    <li ui-sref="home">home</li>
-    <li ui-sref="register">register</li>
-    <li ui-sref="sxs">sxs</li>
-    <li ui-sref="account">account</li>
-    <li ui-sref="planTrip">plan-trip</li>
-  </ul>
-  <br>
-      <!-- {{items}} -->
-      <input type="number" ng-model="filter">
-      <div class="touring" ng-mouseover="filter=1">
-        touring
-      </div>
-      <div class="" ng-mouseover="filter=2">
-        adventure
-      </div>
-  <div class="test-call" ng-repeat="item in items | filter: {motor_type_id:filter}">
-      <h1>{{item.item_name}}</h1>
-      <h2>{{item.price}}</h2>
-  </div>
+  <header>
+    <h1 ui-sref="home" id="branding"></h1>
+    <div class="nav-wrapper">
+      <nav class="nav-top">
+          <h5 id="crosshair" ui-sref="register" class="top-links"><span id="email"></span>SIGN UP FOR EMAIL</h5>
+          <h5 id="crosshair" class="top-links"><span id="support"></span>SUPPORT</h5>
+          <h5 id="crosshair" ui-sref="account" class="top-links"><span id="login"></span>LOGIN</h5>
+          <!-- <div class="search-pannel">-->
+            <fieldset class="search-box">
+              <input class="text-box" type="text" name="name" placeholder="">
+              <input class="btnSearch" type="button" name="search-button" value="">
+            </fieldset>
+          <!-- </div> -->
+      </nav>
+      <nav class="nav-middle">
+        <div class="middle-left">
+          <h1 id="crosshair" class="main-link" ng-click="filter=1; selectedItem=1; show = true">STREET</h1>
+          <h1 id="crosshair" class="main-link" ng-click="filter=2; selectedItem=7; show = true">OFFROAD</h1>
+          <h1 id="crosshair" class="main-link" ng-click="filter=3; selectedItem=11; show = true">ATV</h1>
+          <h1 id="crosshair" class="main-link" ng-click="filter=4; selectedItem=13; show = true">SXS</h1>
+          <h1 id="crosshair" class="main-link" ng-click="filter=5; selectedItem=14; show = true">SCOOTER</h1>
+        </div>
+        <div class="middle-right">
+          <h3 id="crosshair" class="tools-link">SHOP ACCESSORIES</h3>
+          <h3 id="crosshair" class="tools-link">EXPERIENCE</h3>
+          <h3 id="crosshair" class="tools-link">SHOPPING TOOLS</h3>
+          <div class="tools-div">FIND A DEALER</div>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <div class="Div-drop-down" ng-show="show" ng-mouseleave="show=false">
+        <div class="type-titles">
+          <div class="title-holder" ng-repeat="title in type | filter: {honda_motor_id:filter}" ng-mouseover="filterType(title.id)">
+              {{title.type_name}}
+          </div>
+        </div>
+        <div class="itemsContainer">
+          <div class="items-holder">
+            <div class="show-items" ng-repeat="item in items | filter: {motor_type_id:selectedItem}">
+              <div class="img-btn" style="background-position: {{item.image_location}}" href="#">
+                <h1 id="itemName">{{item.item_name}}</h1>
+                <h2 id="itemPrice">{{item.price}}</h2>
+              </div>
+              <div class="btnRow">
+                <a class="item-btn" href="#">VIEW</a>
+                <a class="item-btn" href="#">LIKE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 </div>
