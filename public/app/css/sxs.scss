@@ -1,4 +1,5 @@
 .sxs{
+  position: relative;
   .topTwoContain{
     // ((((((((((((((((((((((((((nav container))))))))))))))))))))))))))
     .navContainer{
@@ -8,7 +9,7 @@
       display: flex;
       flex-direction: column;
 
-      background: green;
+      // background: green;
       .navTopCon{
         height: 60px;
         width: 100vw;
@@ -119,6 +120,7 @@
 
           // background: orange;
           .navBotLeft{
+            position:relative;;
             height: 50px;
             width: 700px;
 
@@ -128,26 +130,27 @@
 
             // background: blue;
             .hiddenIcon{
+              position: absolute;
+              left: 0;
+              // top: 47px;
+              opacity: 0;
+              cursor: pointer;
               height: 37px;
               width: 37px;
-              background-image: url('https://powersports.honda.com/images/HL4/sub-nav-arrow.png');
-              // animation: arrowIn 1.5s;
-              // -webkit-transform: translate3d(0, 0, 0);
-              // -moz-transform: translate3d(0, 0, 0);
-              // transform: translate3d(0, 0, 0);
+              transition: all 500ms linear;
+
+              // background-image: url('https://powersports.honda.com/images/HL4/sub-nav-arrow.png');
             }
-            // 0% {
-            //   opacity: 0;
-            //   background-position: 0 37px;
-            // }
-            // 100% {
-            //   opacity: 1;
-            //   background-position: 0 50%;
-            // }
             .anchorLinkCon{
+              position: absolute;
+              top: 3px;
               display: flex;
               flex-direction: row;
               align-items: center;
+              transition: all 500ms linear;
+              a{
+                color: #2b2d2d;
+              }
               .anchorLinks{
                 padding-left: 20px;
                 padding-right: 20px;
@@ -158,6 +161,7 @@
                 font-weight: bold;
                 color: #2b2d2d;
                 text-transform: uppercase;
+                // transition: all 250ms linear;
               }
             }
           }
@@ -200,19 +204,62 @@
     }
       // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
       .mainImage{
-
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 116vh;
+        background-repeat: no-repeat;
+        background-image: url('https://powersports.honda.com/images/HL4/P1000_hero_1200x1200.jpg');
       }
     }
     // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
     .pioneer{
+      height: 875px;
+      width: 100vw;
+
+      display: flex;
+      justify-content: center;
+
+      // background: blue;
       .pioneerContainer{
+        height: 800px;
+        width: 1200px;
 
-      }
-      .titleImage{
+        // background: blue;
+        .pioneerTxtHolder{
+          margin-left: 110px;
+          margin-top: 65px;
+          .titleImage{
+            width: 430px;
+            height: 42px;
+            margin-bottom: 15px;
+          }
+          .titleH1{
+            font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+            text-align: left;
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #000;
+          }
+          .explorBtn{
+            height: 56px;
+            width: 275px;
+            text-transform: uppercase;
+            font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+            font-weight: 500;
+            background: #de1b22;
+            color: #FFF;
+            font-size: 13px;
+            font-style: italic;
 
-      }
-      .explorBtn{
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
     }
 

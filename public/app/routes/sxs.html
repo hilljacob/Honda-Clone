@@ -1,17 +1,17 @@
 <!-- "sxs" wraps the whole page -->
 <div class="sxs">
   <!-- thid id the container that goes around the Nav Img's and Colors -->
-  <div class="topTwoContain">
+  <div id="part-one" class="topTwoContain">
     <!-- this is the nav bar************************* -->
     <nav class="navContainer">
       <div class="navTopCon">
         <div class="navTop">
-          <div class="hondalogo">
+          <div ui-sref="home" class="hondalogo">
             <img id="image" src="https://powersports.honda.com/images/HL4/logo.png"/>
           </div>
           <div class="mainTopLinks">
             <div class="firstThree">
-              <div class="mTL">HOME</div>
+              <div ui-sref="home" class="mTL">HOME</div>
               <div class="mTL mTLU">SXS MODELS</div>
               <div class="mTL">CURRENT OFFERS</div>
             </div>
@@ -31,31 +31,37 @@
       <div class="navBotCon">
         <div class="navBot">
           <div class="navBotLeft">
-            <div class="hiddenIcon"></div>
+            <div class="hiddenIcon">
+              <a href="#part-one" id="link1"><img class="hiddenIcon" src="https://powersports.honda.com/images/HL4/sub-nav-arrow.png"/>
+              </a>
+            </div>
             <div class="anchorLinkCon">
-              <h1 class="anchorLinks">OVERVIEW</h1>
-              <h1 class="anchorLinks">SPECIFICATIONS</h1>
-              <h1 class="anchorLinks">FEATURES</h1>
-              <h1 class="anchorLinks">ACCESSORIES</h1>
+              <h1 class="anchorLinks"><a href="#part-two" id="link2">OVERVIEW</a></h1>
+              <h1 class="anchorLinks"><a href="#part-three" id="link3">SPECIFICATIONS</a></h1>
+              <!-- <h1 class="anchorLinks"><a href="#part-four" id="link4">FEATURES</a></h1> -->
+              <h1 class="anchorLinks"><a href="#part-five" id="link5">ACCESSORIES</a></h1>
             </div>
           </div>
           <div class="navBotRight">
             <div class="bBox">STAY CONNECTED</div>
-            <div class="bBox">BUILD & PRICE<span id="doubleAro"></span></div>
+            <div id="bBoxTrunRed" class="bBox">BUILD & PRICE<span id="doubleAro"></span></div>
           </div>
         </div>
       </div>
     </nav>
+    <!-- this is the main image that you see******************************** -->
+    <div class="mainImageH">
+      <img class="mainImage" src="https://powersports.honda.com/images/HL4/P1000_hero_1200x1200.jpg"/>
+    </div>
   </div>
-  <!-- this is the main image that you see******************************** -->
-  <div class="mainImage"></div>
   <!-- this is right under the nav bar*************** -->
   <div class="pioneer">
     <div class="pioneerContainer">
-      <div class="titleImage"></div>
-      <!-- <h1>adventure without compromise</h1> -->
-      <div class="explorBtn"></div>
-      <h1></h1>
+      <div class="pioneerTxtHolder">
+          <img class="titleImage" src="https://powersports.honda.com/images/HL4/pioneer_430x42.png"/>
+        <h1 class="titleH1">ADVENTURE WITHOUT COMPROMISE.</h1>
+        <div class="explorBtn">EXPLORE THE PIONEER 1000</div>
+      </div>
     </div>
   </div>
   <!-- this is where you make the the image color change******************* -->
@@ -136,7 +142,7 @@
     </div>
   </div>
   <!-- this is where you see a bunch of weird stacked images***************** -->
-  <div class="gallery">
+  <div id="part-two" class="gallery">
     <div class="innerContainer">
       <div class="galContainer">
         <!-- the images get hidden when you do a media query -->
@@ -204,7 +210,7 @@
     </div>
   </div>
   <!-- this is where the specs fade in on a set timeout************************ -->
-  <div class="specs">
+  <div id="part-three" class="specs">
     <div class="spesContainer">
       <div class="specTitle image-fuel-container">2016 SPECIFICATIONS AT A GLANCE</div>
       <div class="specImgCon">
@@ -263,14 +269,14 @@
     </div>
   </div>
   <!-- this is where you can switch between tabs to see info***************** -->
-  <div class="features">
-    <div class="feTitle"></div>
+  <!-- <div id="part-four" class="features">
+    <div class="feTitle"></div> -->
     <!-- inside this div is where the tabs thing goes -->
-    <div class="tabsTable"></div>
+    <!-- <div class="tabsTable"></div>
     <div class="compairModels"></div>
-  </div>
+  </div> -->
   <!-- this is where the accessories fade in*******************************  -->
-  <div class="acc">
+  <div id="part-five" class="acc">
     <div class="accContainer">
       <!-- this is the title -->
       <div class="accTitle">2016 ACCESSORIES</div>
