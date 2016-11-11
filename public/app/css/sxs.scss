@@ -1,15 +1,208 @@
 .sxs{
-  .topThreeContain{
-    // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
+  .topTwoContain{
+    // ((((((((((((((((((((((((((nav container))))))))))))))))))))))))))
     .navContainer{
-      .navTop{
+      height: 110px;
+      width: 100vw;
 
+      display: flex;
+      flex-direction: column;
+
+      background: green;
+      .navTopCon{
+        height: 60px;
+        width: 100vw;
+        background-image: url('https://powersports.honda.com/images/HL4/header-stripe-tile.png');
+        background-repeat: repeat;
+        background-color: #de1b22;
+
+        display: flex;
+        justify-content: center;
+        .navTop{
+          height: 60px;
+          width: 1200px;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          // background: lightyellow;
+          .hondalogo{
+            height: 60px;
+            width: 200px;
+            border-left: 1px solid #bc1a20;
+            border-right: 1px solid #bc1a20;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #de1b22;
+            #image{
+              width: 132px;
+              height: 21px;
+            }
+          }
+          .mainTopLinks{
+            height: 60px;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:flex-end;
+
+            // background: blue;
+            .firstThree{
+              display: flex;
+              flex-direction: row;
+              .mTL{
+                padding: 0 5px;
+                margin-right: 40px;
+                height: 60px;
+                cursor: pointer;
+                font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+                font-weight: 500;
+                font-style: italic;
+                font-size: 13px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+              }
+              .mTLU{
+                border-bottom: 3px solid #fff;
+
+              }
+            }
+            .findAD{
+              color: #fff;
+              cursor: pointer;
+              font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+              font-weight: 500;
+              font-style: italic;
+              font-size: 13px;
+              height: 40px;
+              width: 186px;
+              border: 2px solid #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .mTLb{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+            }
+
+            #icon{
+              margin-right: 10px;
+              width: 19px;
+              height: 29px;
+              // display: block;
+              // // background-image: url('https://powersports.honda.com/images/HL4/find-dealer-pin.png');
+            }
+          }
+        }
       }
-      .navBot{
+      .navBotCon{
+        height: 50px;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+
+        background: white;
+        .navBot{
+          height: 50px;
+          width: 1200px;
+
+          display: flex;
+          flex-direction: row;
+
+          // background: orange;
+          .navBotLeft{
+            height: 50px;
+            width: 700px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            // background: blue;
+            .hiddenIcon{
+              height: 37px;
+              width: 37px;
+              background-image: url('https://powersports.honda.com/images/HL4/sub-nav-arrow.png');
+              // animation: arrowIn 1.5s;
+              // -webkit-transform: translate3d(0, 0, 0);
+              // -moz-transform: translate3d(0, 0, 0);
+              // transform: translate3d(0, 0, 0);
+            }
+            // 0% {
+            //   opacity: 0;
+            //   background-position: 0 37px;
+            // }
+            // 100% {
+            //   opacity: 1;
+            //   background-position: 0 50%;
+            // }
+            .anchorLinkCon{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .anchorLinks{
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 13px;
+                line-height: 50px;
+                font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+                font-style: normal;
+                font-weight: bold;
+                color: #2b2d2d;
+                text-transform: uppercase;
+              }
+            }
+          }
+          .navBotRight{
+            height: 50px;
+            width: 500px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            // background: green;
+            .bBox{
+              width: 185px;
+              height: 50px;
+              font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
+              font-size: 13px;
+              border-right: 1px solid #fff;
+              background: #242424;
+              color: #fff;
+              font-style: italic;
+              font-weight: bold;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            #doubleAro{
+              display: inline-block;
+              width: 20px;
+              height: 18px;
+              margin-left: 10px;
+              background-image: url('https://powersports.honda.com/images/HL4/bp-arrow.png');
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+
+    }
+      // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
+      .mainImage{
 
       }
     }
-
     // ((((((((((((((((((((((((((pioneer))))))))))))))))))))))))))
     .pioneer{
       .pioneerContainer{
@@ -23,10 +216,6 @@
       }
     }
 
-    // ((((((((((((((((((((((((((mainImage))))))))))))))))))))))))))
-    .mainImage{
-
-    }
     // ((((((((((((((((((((((((((colorChanger))))))))))))))))))))))))))
     .colorChanger{
       position: relative;
@@ -378,7 +567,7 @@
         }
       }
     }
-  }
+
   // ((((((((((((((((((((((((((gallery))))))))))))))))))))))))))
   .gallery{
     height: 2310px;
