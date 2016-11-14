@@ -50,6 +50,7 @@
     // justify-content:space-between;;
   }
   .goBtn{
+    cursor: pointer;
     height: 21px;
     display: flex;
     align-items: center;
@@ -79,6 +80,7 @@
     background-position: 0 -160px;
   }
   .SocialBtns{
+    cursor: pointer;
     width: 29px;
     height: 30px;
     // background: red;

@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     .logoHolder{
+      cursor: pointer;
       display: flex;
       align-items: center;
     }
@@ -31,11 +32,13 @@
       padding-top: 10px;
     }
     .headH1{
+      cursor: pointer;
       font-size: 20px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
     .headH3{
+      cursor: pointer;
       font-size: 15px;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -71,6 +74,7 @@
         align-items: center;
         height: 42px;
         .mainBtn{
+          cursor: pointer;
           background: #DCDCDC;
           height: 42px;
           font-size: 15px;
@@ -132,14 +136,17 @@
 
           }
           .SubBtn{
+            cursor: pointer;
             height: 33px;
             width: 111px;
-            background: #E26569;
+            background: #C00;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-
+          }
+          .SubBtn:hover{
+            background: #E26569;
           }
           .planningTips{
             .planningH1{
@@ -182,7 +189,7 @@
 
     }
     #map {
-      height: 904px;
+      // height: 904px;
       // width: 1000px;
       width: 100vw;
     }

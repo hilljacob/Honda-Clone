@@ -29,6 +29,7 @@
 
           // background: lightyellow;
           .hondalogo{
+            cursor: pointer;
             height: 60px;
             width: 200px;
             border-left: 1px solid #bc1a20;
@@ -56,6 +57,7 @@
               display: flex;
               flex-direction: row;
               .mTL{
+                cursor: pointer;
                 padding: 0 5px;
                 margin-right: 40px;
                 height: 60px;
@@ -87,6 +89,7 @@
               justify-content: center;
               align-items: center;
               .mTLb{
+                cursor: pointer;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -175,6 +178,7 @@
 
             // background: green;
             .bBox{
+              cursor: pointer;
               width: 185px;
               height: 50px;
               font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
@@ -245,6 +249,7 @@
             color: #000;
           }
           .explorBtn{
+            cursor: pointer;
             height: 56px;
             width: 275px;
             text-transform: uppercase;
@@ -363,6 +368,7 @@
 
         // background: green;
         .redBtn{
+          cursor: pointer;
           height: 46px;
           width: 76px;
           color: #fff;
@@ -405,6 +411,7 @@
 
 
           .icon{
+            cursor: pointer;
             display: block;
             background-image: url('https://powersports.honda.com/images/HL4/spin-icon-mobile.png');
             background-repeat: no-repeat;
@@ -413,6 +420,7 @@
             margin-right: 10px;
           }
           .icon2{
+            // cursor: pointer;
             display: block;
             background-image: url('https://powersports.honda.com/images/HL4/trim-icon-mobile.png');
             background-repeat: no-repeat;
@@ -505,6 +513,7 @@
                 border: 1px solid rgb(255, 153, 0);
               }
             .colorChangeBtn{
+              cursor: pointer;
               width: 45px;
               height: 30px;
               cursor: pointer;
@@ -589,6 +598,7 @@
 
           // background: gold;
           .viewSpec{
+            cursor: pointer;
             height: 21px;
             color: #242424;
             font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
@@ -602,6 +612,7 @@
             flex-direction: row;
             justify-content: center;
             .aroBtn{
+              cursor: pointer;
               display: block;
               height: 24px;
               width: 24px;
@@ -633,6 +644,7 @@
 
     }
     .fourArroBtn1{
+      cursor: pointer;
       position: absolute;
       bottom: 20px;
       right: 50px;
@@ -645,6 +657,7 @@
       background-color: transparent;
     }
     .fourArroBtn{
+      cursor: pointer;
       position: absolute;
       bottom: 20px;
       right: 20px;
@@ -720,6 +733,7 @@
       color: #2b302f;
     }
     .galTxtBtn{
+      cursor: pointer;
       display: inline-block;
       vertical-align: middle;
       background-image: url('https://powersports.honda.com/images/HL4/play-icon.png');
@@ -883,6 +897,7 @@
         flex-direction: row;
         justify-content: center;
         .aroBtn{
+          cursor: pointer;
           display: block;
           height: 24px;
           width: 24px;
@@ -1118,6 +1133,7 @@
         margin-left: 7px;
       }
       .aroBtn{
+        cursor: pointer;
         display: block;
         height: 24px;
         width: 24px;
@@ -1148,7 +1164,8 @@
 
   // ((((((((((((((((((((((((((features))))))))))))))))))))))))))
   .features{
-    height: 1005px;
+    height: 10px;
+    // height: 1005px;
     background: #ebebeb;
     .feTitle{
 
@@ -1212,6 +1229,7 @@
         align-items: center;
       }
       .redArros{
+        cursor: pointer;
         height: 15px;
         width: 365px;
         margin: 20px 20px 60px 0;
@@ -1435,6 +1453,7 @@
         flex-direction: row;
       }
       .aroBtn{
+        cursor: pointer;
         display: block;
         height: 24px;
         width: 24px;
@@ -1519,6 +1538,7 @@
       flex-direction: row;
       justify-content: space-between;
       .pBtn{
+        cursor: pointer;
         width: 240px;
         height: 53px;
         border: 3px solid #de1b22;

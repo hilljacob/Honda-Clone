@@ -160,6 +160,7 @@
         flex-direction: row;
         justify-content: space-around; }
       .landing .bottomLinksContainer .bottomContent .BotBtn {
+        cursor: pointer;
         height: 20px;
         width: 105px;
         border: #C00 solid 1px;
@@ -189,6 +190,7 @@
         font-weight: bold;
         padding-left: 10px; }
       .landing .bottomLinksContainer .bottomContent .boxBotBtn {
+        cursor: pointer;
         height: 20px;
         width: 72px;
         border: #C00 solid 1px;
@@ -236,6 +238,7 @@
   flex-direction: row;
   justify-content: space-between; }
   .tripPlannerHolder .navHead .logoHolder {
+    cursor: pointer;
     display: flex;
     align-items: center; }
   .tripPlannerHolder .navHead .tripLogo {
@@ -250,10 +253,12 @@
     justify-content: flex-end;
     padding-top: 10px; }
   .tripPlannerHolder .navHead .headH1 {
+    cursor: pointer;
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 15px; }
   .tripPlannerHolder .navHead .headH3 {
+    cursor: pointer;
     font-size: 15px;
     padding-top: 15px;
     padding-bottom: 15px; }
@@ -282,6 +287,7 @@
       align-items: center;
       height: 42px; }
       .tripPlannerHolder .mainholder .leftholder .buttoHolder .mainBtn {
+        cursor: pointer;
         background: #DCDCDC;
         height: 42px;
         font-size: 15px;
@@ -330,13 +336,16 @@
           height: 25px;
           font-size: 13px; }
         .tripPlannerHolder .mainholder .leftholder .searchContainer .searchNav .SubBtn {
+          cursor: pointer;
           height: 33px;
           width: 111px;
-          background: #E26569;
+          background: #C00;
           color: white;
           display: flex;
           align-items: center;
           justify-content: center; }
+        .tripPlannerHolder .mainholder .leftholder .searchContainer .searchNav .SubBtn:hover {
+          background: #E26569; }
         .tripPlannerHolder .mainholder .leftholder .searchContainer .searchNav .planningTips .planningH1 {
           font-size: 17px;
           margin-top: 9px;
@@ -364,7 +373,6 @@
     display: flex;
     flex-direction: row; }
   .tripPlannerHolder .mainholder #map {
-    height: 904px;
     width: 100vw; }
   .tripPlannerHolder .mainholder .rightBox {
     width: 440px;
@@ -468,6 +476,7 @@
         flex-direction: row;
         justify-content: space-between; }
         .sxs .topTwoContain .navContainer .navTopCon .navTop .hondalogo {
+          cursor: pointer;
           height: 60px;
           width: 200px;
           border-left: 1px solid #bc1a20;
@@ -490,6 +499,7 @@
             display: flex;
             flex-direction: row; }
             .sxs .topTwoContain .navContainer .navTopCon .navTop .mainTopLinks .firstThree .mTL {
+              cursor: pointer;
               padding: 0 5px;
               margin-right: 40px;
               height: 60px;
@@ -517,6 +527,7 @@
             justify-content: center;
             align-items: center; }
             .sxs .topTwoContain .navContainer .navTopCon .navTop .mainTopLinks .findAD .mTLb {
+              cursor: pointer;
               display: flex;
               flex-direction: row;
               align-items: center; }
@@ -576,6 +587,7 @@
           flex-direction: row;
           justify-content: flex-end; }
           .sxs .topTwoContain .navContainer .navBotCon .navBot .navBotRight .bBox {
+            cursor: pointer;
             width: 185px;
             height: 50px;
             font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
@@ -627,6 +639,7 @@
           margin-bottom: 25px;
           color: #000; }
         .sxs .pioneer .pioneerContainer .pioneerTxtHolder .explorBtn {
+          cursor: pointer;
           height: 56px;
           width: 275px;
           text-transform: uppercase;
@@ -708,6 +721,7 @@
       justify-content: flex-start;
       align-items: center; }
       .sxs .colorChanger .colortopleft .redBtn {
+        cursor: pointer;
         height: 46px;
         width: 76px;
         color: #fff;
@@ -740,6 +754,7 @@
         justify-content: center;
         align-items: center; }
         .sxs .colorChanger .colortopright .blackBox .icon {
+          cursor: pointer;
           display: block;
           background-image: url("https://powersports.honda.com/images/HL4/spin-icon-mobile.png");
           background-repeat: no-repeat;
@@ -811,6 +826,7 @@
         .sxs .colorChanger .colorBotCon .colorBtLeft .btnHolder #orangeBtnH:hover {
           border: 1px solid #ff9900; }
         .sxs .colorChanger .colorBotCon .colorBtLeft .btnHolder .colorChangeBtn {
+          cursor: pointer;
           width: 45px;
           height: 30px;
           cursor: pointer;
@@ -873,6 +889,7 @@
         justify-content: space-around;
         align-items: flex-end; }
         .sxs .colorChanger .colorBotCon .colorBtRight .viewSpec {
+          cursor: pointer;
           height: 21px;
           color: #242424;
           font-family: 'Gotham SSm A', 'Gotham SSm B', 'arial';
@@ -885,6 +902,7 @@
           flex-direction: row;
           justify-content: center; }
           .sxs .colorChanger .colorBotCon .colorBtRight .viewSpec .aroBtn {
+            cursor: pointer;
             display: block;
             height: 24px;
             width: 24px;
@@ -900,6 +918,7 @@
     align-items: center;
     justify-content: space-around; }
     .sxs .gallery .fourArroBtn1 {
+      cursor: pointer;
       position: absolute;
       bottom: 20px;
       right: 50px;
@@ -911,6 +930,7 @@
       border: none;
       background-color: transparent; }
     .sxs .gallery .fourArroBtn {
+      cursor: pointer;
       position: absolute;
       bottom: 20px;
       right: 20px;
@@ -973,6 +993,7 @@
       font-family: 'HelveticaNeueW01-55Roma';
       color: #2b302f; }
     .sxs .gallery .galTxtBtn {
+      cursor: pointer;
       display: inline-block;
       vertical-align: middle;
       background-image: url("https://powersports.honda.com/images/HL4/play-icon.png");
@@ -1081,6 +1102,7 @@
         flex-direction: row;
         justify-content: center; }
         .sxs .gallery .viewGal .viewSpec .aroBtn {
+          cursor: pointer;
           display: block;
           height: 24px;
           width: 24px;
@@ -1258,6 +1280,7 @@
       .sxs .specs .viewSpec .viewSpecMar {
         margin-left: 7px; }
       .sxs .specs .viewSpec .aroBtn {
+        cursor: pointer;
         display: block;
         height: 24px;
         width: 24px;
@@ -1271,7 +1294,7 @@
     opacity: 1;
     transition: all 1.5s ease-in-out; }
   .sxs .features {
-    height: 1005px;
+    height: 10px;
     background: #ebebeb; }
   .sxs .acc {
     height: 1130px;
@@ -1309,6 +1332,7 @@
         flex-direction: column;
         align-items: center; }
       .sxs .acc .accImgCon .redArros {
+        cursor: pointer;
         height: 15px;
         width: 365px;
         margin: 20px 20px 60px 0;
@@ -1464,6 +1488,7 @@
         display: flex;
         flex-direction: row; }
       .sxs .models .pionPrice .aroBtn {
+        cursor: pointer;
         display: block;
         height: 24px;
         width: 24px;
@@ -1533,6 +1558,7 @@
       flex-direction: row;
       justify-content: space-between; }
       .sxs .models .pionBtns .pBtn {
+        cursor: pointer;
         width: 240px;
         height: 53px;
         border: 3px solid #de1b22;
@@ -1561,6 +1587,116 @@
     .sxs .models #p700 {
       height: 191px;
       width: 262px; }
+
+.footer1 {
+  background: black; }
+  .footer1 .footerContainer {
+    width: 1230px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    background: #2E2E2E; }
+  .footer1 .footerTop {
+    width: 1230px;
+    height: 70px;
+    background: #2E2E2E; }
+  .footer1 .topLinks {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .footer1 .topLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .footer1 .tLinks {
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 15px;
+    color: white; }
+  .footer1 .topmid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 100px; }
+  .footer1 .goBtn {
+    cursor: pointer;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    background: #C00;
+    padding: 0 9px;
+    font-size: 12px;
+    border: #C00 solid 1px;
+    color: white;
+    font-weight: bold; }
+  .footer1 .goBtn:hover {
+    color: #c00;
+    background: white; }
+  .footer1 .topRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .footer1 .social {
+    display: flex;
+    flex-direction: row; }
+  .footer1 .twitter {
+    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
+    background-position: 0 -160px; }
+  .footer1 .SocialBtns {
+    cursor: pointer;
+    width: 29px;
+    height: 30px; }
+  .footer1 .faceBook {
+    margin-left: 7px;
+    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
+    background-position: 0 0; }
+  .footer1 .insta {
+    margin-left: 7px;
+    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
+    background-position: 0 -80px; }
+  .footer1 .youTube {
+    margin-left: 7px;
+    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
+    background-position: 0 -240px; }
+  .footer1 #zipcode {
+    width: 70px;
+    height: 17px;
+    padding: 1px 8px;
+    border: solid 1px #aaabab; }
+  .footer1 #horRow {
+    padding: 0px; }
+  .footer1 .footerBottom {
+    height: 50px;
+    background: #2E2E2E; }
+  .footer1 .bottomTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px; }
+  .footer1 .BotTopLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footer1 .footLink1 {
+    font-size: 11px;
+    text-decoration: none;
+    padding-right: 10px;
+    color: white; }
+  .footer1 .footLink {
+    font-size: 11px;
+    text-decoration: none;
+    border-left: 1px solid white;
+    padding: 0 9px;
+    color: white; }
+  .footer1 .bottomBot {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    height: 44px;
+    padding-bottom: 65px; }
 
 .footer2 .footerContainer {
   background: #2e2e2e; }
@@ -1643,6 +1779,7 @@
   cursor: pointer; }
 
 .footer2 .subBtn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1722,6 +1859,7 @@
     justify-content: center;
     align-items: center; }
   .footer2 .footMid .social {
+    cursor: pointer;
     width: 35px;
     height: 35px;
     margin: 0 7px; }
@@ -1754,6 +1892,7 @@
   padding-left: 30px; }
 
 .footer2 #dealerSearch {
+  cursor: pointer;
   position: absolute;
   width: 0px;
   height: 13px;
@@ -1779,114 +1918,6 @@
     color: white;
     font-size: 12px;
     padding-bottom: 20px; }
-
-.footer1 {
-  background: black; }
-  .footer1 .footerContainer {
-    width: 1230px;
-    margin: 0 auto;
-    padding-bottom: 65px;
-    background: #2E2E2E; }
-  .footer1 .footerTop {
-    width: 1230px;
-    height: 70px;
-    background: #2E2E2E; }
-  .footer1 .topLinks {
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-  .footer1 .topLeft {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .footer1 .tLinks {
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 15px;
-    color: white; }
-  .footer1 .topmid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    padding: 0px 100px; }
-  .footer1 .goBtn {
-    height: 21px;
-    display: flex;
-    align-items: center;
-    background: #C00;
-    padding: 0 9px;
-    font-size: 12px;
-    border: #C00 solid 1px;
-    color: white;
-    font-weight: bold; }
-  .footer1 .goBtn:hover {
-    color: #c00;
-    background: white; }
-  .footer1 .topRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .footer1 .social {
-    display: flex;
-    flex-direction: row; }
-  .footer1 .twitter {
-    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
-    background-position: 0 -160px; }
-  .footer1 .SocialBtns {
-    width: 29px;
-    height: 30px; }
-  .footer1 .faceBook {
-    margin-left: 7px;
-    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
-    background-position: 0 0; }
-  .footer1 .insta {
-    margin-left: 7px;
-    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
-    background-position: 0 -80px; }
-  .footer1 .youTube {
-    margin-left: 7px;
-    background-image: url("http://powersports.honda.com/images/footer/social-icons.png");
-    background-position: 0 -240px; }
-  .footer1 #zipcode {
-    width: 70px;
-    height: 17px;
-    padding: 1px 8px;
-    border: solid 1px #aaabab; }
-  .footer1 #horRow {
-    padding: 0px; }
-  .footer1 .footerBottom {
-    height: 50px;
-    background: #2E2E2E; }
-  .footer1 .bottomTop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50px; }
-  .footer1 .BotTopLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .footer1 .footLink1 {
-    font-size: 11px;
-    text-decoration: none;
-    padding-right: 10px;
-    color: white; }
-  .footer1 .footLink {
-    font-size: 11px;
-    text-decoration: none;
-    border-left: 1px solid white;
-    padding: 0 9px;
-    color: white; }
-  .footer1 .bottomBot {
-    color: white;
-    font-size: 11px;
-    text-align: center;
-    height: 44px;
-    padding-bottom: 65px; }
 
 .nav1 {
   background: transparent; }

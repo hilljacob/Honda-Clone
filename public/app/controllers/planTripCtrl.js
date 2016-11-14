@@ -10,7 +10,7 @@ angular.module('personalPro').controller('planTripCtrl', function($scope){
     var directionsService = new google.maps.DirectionsService;
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 7,
-      center: {lat: 41.85, lng: -87.65}
+      center: {lat: 40.77852, lng: -111.931414}
     });
     directionsDisplay.setMap(map);
     directionsDisplay.setPanel(document.getElementById('right-panel'));
