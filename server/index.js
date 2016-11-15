@@ -7,11 +7,13 @@ var keys = require('./config.js');
 var massive = require('massive');
 
 var massiveServ = massive.connectSync({
-  connectionString: "postgres://localhost/motors"})
+  connectionString: keys.connectionString})
+
+  // connectionString: "postgres://localhost/motors"})
 
 
 
-var port = 8000;
+var port = keys.port;
 
 var corsOptions = {
   origin: 'http://localhost:8000'
