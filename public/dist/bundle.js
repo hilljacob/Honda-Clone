@@ -307,7 +307,7 @@ angular.module('personalPro').controller('sxsCtrl', ["$scope", function($scope){
 
   function carousel() {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("mySlides2");
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
       }
@@ -466,6 +466,51 @@ angular.module('personalPro').controller('sxsCtrl', ["$scope", function($scope){
         $(".pioneerTxtHolder").css("opacity", 1 - $(window).scrollTop() / 325);
       });
 
+      // this is where im faking a table**********************
+      // this is the table default setting
+      $(function(){
+          $("#holder1").show();
+          $("#holder2, #holder3, #holder4").hide();
+          $( "#tabHover1" ).addClass( "selected" );
+      });
+
+      // this is where we change the show hide depending on click location*********
+      $(function(){
+        $("#tabHover1").on("click",function(){
+          $(".imgBackDef").css({"background-image": "url('https://powersports.honda.com/images/HL4/features-1000/grid/1-1200x580px.jpg')"});
+          $("#holder1").show();
+          $("#holder2, #holder3, #holder4").hide();
+          $( "#tabHover1" ).addClass( "selected" );
+          $( "#tabHover2, #tabHover3, #tabHover4" ).removeClass( "selected" );
+        });
+      });
+      $(function(){
+        $("#tabHover2").on("click",function(){
+          $(".imgBackDef").css({"background-image": "url('https://powersports.honda.com/images/HL4/features-1000/grid/2-1200x580px.jpg')"});
+          $("#holder2").show();
+          $("#holder1, #holder3, #holder4").hide();
+          $( "#tabHover2" ).addClass( "selected" );
+          $( "#tabHover1, #tabHover3, #tabHover4" ).removeClass( "selected" );
+        });
+      });
+      $(function(){
+        $("#tabHover3").on("click",function(){
+          $(".imgBackDef").css({"background-image": "url('https://powersports.honda.com/images/HL4/features-1000/grid/19-1200x580px.jpg')"});
+          $("#holder3").show();
+          $("#holder2, #holder1, #holder4").hide();
+          $( "#tabHover3" ).addClass( "selected" );
+          $( "#tabHover2, #tabHover1, #tabHover4" ).removeClass( "selected" );
+        });
+      });
+      $(function(){
+        $("#tabHover4").on("click",function(){
+          $(".imgBackDef").css({"background-image": "url('https://powersports.honda.com/images/HL4/features-1000/grid/13-1200x580px.jpg')"});
+          $("#holder4").show();
+          $("#holder2, #holder3, #holder1").hide();
+          $( "#tabHover4" ).addClass( "selected" );
+          $( "#tabHover2, #tabHover3, #tabHover1" ).removeClass( "selected" );
+        });
+      });
 }])
 
 angular.module('personalPro').service('googleServ', ["$http", function($http){
